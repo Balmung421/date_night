@@ -3,12 +3,12 @@ class Node
   attr_accessor :movie_rating, :movie_title, :lower_link, :higher_link, :depth
 
   def initialize(movie_rating, movie_title, depth=0)
-		@movie_rating = movie_rating
-		@movie_title = movie_title
+    @movie_rating = movie_rating
+    @movie_title = movie_title
     @depth = depth
     @lower_link = nil
     @higher_link = nil
-	end
+  end
 
   def insert(movie_rating, movie_title)
     if movie_rating < @movie_rating
